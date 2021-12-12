@@ -1,0 +1,19 @@
+{
+  "name": "winter-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "author": "sagini",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^2.27.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

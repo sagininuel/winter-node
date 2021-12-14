@@ -1,0 +1,2 @@
+20211214	19:44:32	ab4feb12-2c00-4c54-aa40-962d48e84d6c	Error: Not allowed by CORS
+20211214	19:52:23	79aa0937-d092-448f-83b4-a9f679ec434c	Error: Not allowed by CORS

@@ -1,2 +1,14 @@
 20211214	19:44:32	ab4feb12-2c00-4c54-aa40-962d48e84d6c	Error: Not allowed by CORS
 20211214	19:52:23	79aa0937-d092-448f-83b4-a9f679ec434c	Error: Not allowed by CORS
+20211215	17:25:58	d4822893-a92b-468c-bb35-10f66e5a0887	SyntaxError: Unexpected end of JSON input
+20211215	17:54:13	ca8232d3-c758-4ab1-a422-9b04efbe28c9	TypeError: Cannot read properties of undefined (reading 'params')
+20211215	18:28:26	3d3af2ec-27f4-4835-9143-dcd058bdde44	Error: ENOENT: no such file or directory, stat '/Users/sir_ghini/code/node/express/views/44.html'
+20211215	18:29:56	3325c847-9d67-4539-8e22-37a599c542f9	Error: ENOENT: no such file or directory, stat '/Users/sir_ghini/code/node/express/views/44.html'
+20211215	18:30:01	5024a452-29af-42e4-829a-8e2373d72534	Error: ENOENT: no such file or directory, stat '/Users/sir_ghini/code/node/express/views/44.html'
+20211215	18:30:02	d454fdcd-cb95-4c59-b4db-23a37020e506	Error: ENOENT: no such file or directory, stat '/Users/sir_ghini/code/node/express/views/44.html'
+20211215	18:30:47	4f1865b2-b649-42e0-a1fb-83d1230399ec	Error: ENOENT: no such file or directory, stat '/Users/sir_ghini/code/node/express/views/44.html'
+20211215	18:30:47	0e037d59-291a-4382-bcfb-599b684293e1	Error: ENOENT: no such file or directory, stat '/Users/sir_ghini/code/node/express/views/44.html'
+20211215	18:31:01	3c9d470e-f62b-4001-ad5f-8e5a1272dff7	Error: ENOENT: no such file or directory, stat '/Users/sir_ghini/code/node/express/views/44.html'
+20211215	18:31:01	4ed5149e-fbe0-48ed-bb28-4caf8f318cc0	Error: ENOENT: no such file or directory, stat '/Users/sir_ghini/code/node/express/views/44.html'
+20211215	18:31:50	4a701729-ba62-429f-b558-081ff1ec3d84	Error; ENOENT: no such file or directory, stat '/Users/sir_ghini/code/node/express/views/44.html'
+20211215	18:31:50	2cbb0b24-e1f3-4d3e-a749-c953931d10b3	Error; ENOENT: no such file or directory, stat '/Users/sir_ghini/code/node/express/views/44.html'

@@ -146,16 +146,12 @@ server.listen(PORT, () => console.log(`Server is running on port ${PORT}`))
 //add listener for the log event
 // myEmitter.on('log', (msg) => logEvents(msg));
 
-// for(i = 0; i < 10; i++){
-//    task(i);
-// }
-
-// function task(i){
-//     setTimeout(() => {
-//         //emit event
-//         myEmitter.emit('log', 'Log event emitted!');
-//     }, 2000*i);
-// }
+for(i = 0; i < 10; i++){
+    setTimeout(() => {
+        //emit event
+        myEmitter.emit('log', 'Log event emitted!', 'logEvent.txt')
+    }, i%2 == 0 ? 1000*i : (1000*i)-500);
+}
 
 
 

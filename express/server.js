@@ -1,12 +1,10 @@
 const express = require('express');
-// const res = require('express/lib/response');
 const app = express();
 const path = require('path');
 const cors = require('cors');
-const { corsOptions } = require('./middleware/cors');
+const { corsOptions } = require('./config/corsOptions');
 const { logger } = require('./middleware/logEvents');
 const { errorHandler } = require('./middleware/errorHandler');
-
 const PORT = process.env.PORT || 3500;
 
 // custom middleware logger
@@ -15,8 +13,7 @@ app.use(logger);
 // Cross Origin Resource Sharing blocking point!
 app.use(cors(corsOptions));
 
-// Built-in middleware to handle urlencoded data
-// in the other words, form data: 
+// Built-in middleware to handle urlencoded data form data: 
 // 'content-type: application/x-www-form-urlencoded'
 app.use(express.urlencoded({ extended: false}));
 
@@ -25,13 +22,10 @@ app.use(express.json());
 
 // serve static files
 app.use('/', express.static(path.join(__dirname, '/public')));
-app.use('/subdir', express.static(path.join(__dirname, '/public')));
 
 // handle incoming routes
 app.use('/', require('./routes/root'));
-app.use('/subdir', require('./routes/subdir'));
 app.use('/employees', require('./routes/api/employees'));
-
 
 // all other route paths ---> app.all accepsts regex! app.use doesn't (does in newer versions)
 // custom not found

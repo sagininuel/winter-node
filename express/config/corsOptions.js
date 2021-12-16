@@ -1,5 +1,9 @@
 // Cross Origin Resource Sharing
-const whitelist = ['https://www.google.com', 'http://127.0.0.1:5500', 'http://localhost:3500'];
+const whitelist = [
+    'https://www.google.com', 
+    'http://127.0.0.1:5500', 
+    'http://localhost:3500'
+];
 
 const corsOptions = {
     origin : (origin, callback) => {

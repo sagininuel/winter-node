@@ -25,6 +25,8 @@ app.use('/', express.static(path.join(__dirname, '/public')));
 
 // handle incoming routes
 app.use('/', require('./routes/root'));
+app.use('/register', require('./routes/register'));
+app.use('/auth', require('./routes/auth'));
 app.use('/employees', require('./routes/api/employees'));
 
 // all other route paths ---> app.all accepsts regex! app.use doesn't (does in newer versions)

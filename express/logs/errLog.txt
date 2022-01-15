@@ -64,3 +64,12 @@
 20211216	17:40:35	cb8a7c95-310e-474c-a6af-8428316916e4	TypeError; Cannot read properties of undefined (reading 'id')
 20211216	17:40:49	ad972e2e-631d-4857-aa2e-6b1e86d3edee	TypeError; Cannot read properties of undefined (reading 'id')
 20211216	17:51:00	7e5f8206-9eff-49f4-ac66-586087c563eb	TypeError; Assignment to constant variable.
+20220116	00:47:14	af4c8ee0-e844-4026-8619-ba4c2388d39a	ReferenceError; authHeader is not defined
+20220116	00:47:20	52038164-e3cc-46f7-8259-1d82b9d63e6a	ReferenceError; authHeader is not defined
+20220116	00:49:01	6f467dd5-9cbc-4f60-9159-f54953d5d854	ReferenceError; authHeader is not defined
+20220116	00:49:02	cb4ddd83-c585-464c-88ed-9b3a6c25eba0	ReferenceError; authHeader is not defined
+20220116	00:49:15	e753a096-712f-46f9-9e64-890fa41bbdd1	ReferenceError; authHeader is not defined
+20220116	00:49:46	7ac5f7d3-9962-4dea-a16d-79afa35b9be2	ReferenceError; authHeader is not defined
+20220116	00:50:56	d74b4e46-f3ed-4d7f-9cb1-bd67fbc18c09	ReferenceError; autHeader is not defined
+20220116	00:51:59	5a05bb5c-49da-4e15-afd1-c2c89c6c47a3	ReferenceError; token is not defined
+20220116	02:34:26	8f96c73d-282c-4646-b144-3b814ec6432a	TypeError; allowedOrigins.omcludes is not a function

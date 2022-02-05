@@ -1,3 +1,6 @@
+const alert1  = require('../test');
+const alert2  = require('../test');
+
 const usersDB = {
     users: require('../model/users.json'),
     setUsers: function (data) { this.users = data }
@@ -26,13 +29,21 @@ const handleRefreshToken = async (req, res) => {
        process.env.REFRESH_TOKEN_SECRET,
        (err, decoded) => {
            if (err || foundUser.username !== decoded.username) return res.sendStatus(403);
+           const roles = Object.values(foundUser.roles);
            const accessToken = jwt.sign(
-               { "username" : decoded.username },
+               { 
+                   "userInfo": {
+                       "username": decoded.username,
+                       "roles": roles
+                   }
+                },
                process.env.ACCESS_TOKEN_SECRET,
                { expiresIn: '30s'}
            );
            res.json({ accessToken })
-       }
+        //    setTimeout(alert1.alert1, 30000);
+        //    setTimeout(alert2.alert2, 45000);
+            }
    );
 }
 

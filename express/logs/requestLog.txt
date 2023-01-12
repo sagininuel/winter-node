@@ -894,3 +894,6 @@
 20220206	00:36:48	d82e7d6b-4f71-479c-996d-047ae438abeb	GET	undefined	/refresh
 20220206	00:36:52	2825e593-e003-4c54-b899-35873a4dbfea	GET	undefined	/logout
 20220206	00:36:56	1fbe38c4-5492-40fb-989e-6d17fe4c8b6e	GET	undefined	/refresh
+20220206	00:46:25	8bb1c391-4daf-4bcd-b87a-289082b13ba5	GET	undefined	/
+20220206	00:46:25	8abc0f58-7ed2-49ad-9b5a-aff45d3bd3b1	GET	undefined	/css/style.css
+20220206	00:46:26	07e1ecb2-2d32-41e3-bedd-41d7b8d52093	GET	undefined	/favicon.ico

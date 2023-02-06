@@ -10,7 +10,6 @@ const bcrypt = require('bcrypt');
 //  const { json } = require('express/lib/response');
 
 const jwt = require('jsonwebtoken');
-require('dotenv').config();
 
 const handleRefreshToken = async (req, res) => {
     const cookies = req.cookies;

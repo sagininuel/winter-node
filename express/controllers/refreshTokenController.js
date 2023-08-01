@@ -1,5 +1,5 @@
-const alert1  = require('../test');
-const alert2  = require('../test');
+//const alert1  = require('../test');
+//const alert2  = require('../test');
 
 const usersDB = {
     users: require('../model/users.json'),

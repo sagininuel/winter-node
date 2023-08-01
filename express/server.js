@@ -43,7 +43,7 @@ app.use('/logout', require('./routes/logout'));
 app.use(verifyJWT);
 app.use('/employees', require('./routes/api/employees'));
 
-// all other route paths ---> app.all accepsts regex! app.use doesn't (does in newer versions)
+// all other route paths ---> app.all accepts regex! app.use doesn't (does in newer versions)
 // custom not found
 app.all('*', (req,res) => {
     res.status(404);

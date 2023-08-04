@@ -13,7 +13,11 @@ const path = require('path');
 
 const handleLogin = async (req, res) => {
     const { user, pwd } = req.body;
-    if (!user || !pwd) return res.status(400).json({ 'message': 'Username and password are required.' });
+    if (!pwd || !user) return res.status(400).json({ 'message': 'Username and password are required.' });
+    console.log(req.body);
+    
+    // if (!pwd) return res.status(400).json({ 'message': 'password are required.' });
+    // if (!user) return res.status(400).json({ 'message': 'Username are required.' });
 
     // check for valid user
     const foundUser = usersDB.users.find(person => person.username === user);
@@ -38,7 +42,7 @@ const handleLogin = async (req, res) => {
         const accessToken = jwt.sign(
             { "username": foundUser.username },
             process.env.ACCESS_TOKEN_SECRET,
-            { expiresIn: '90s' }
+            { expiresIn: '190s' }
         );
 
         const refreshToken = jwt.sign(
@@ -57,7 +61,8 @@ const handleLogin = async (req, res) => {
         );
         //    res.cookie('jwt', refreshToken, { httpOnly: true, sameSite: 'None', secure: true, maxAge: 24 * 60 * 60 * 1000}); //For chrome and production
         res.cookie('jwt', refreshToken, { httpOnly: true, maxAge: 24 * 60 * 60 * 1000 });
-        res.json({ accessToken });
+        res.status(200).json({ accessToken });
+       // res.sendFile(path.join(__dirname, '..', 'views', 'landing_page.html'));
     } else {
         res.sendStatus(401);
     }

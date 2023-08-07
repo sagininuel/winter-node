@@ -13,6 +13,8 @@ const path = require('path');
 
 const handleLogin = async (req, res) => {
     const { user, pwd } = req.body;
+    
+
     if (!pwd || !user) return res.status(400).json({ 'message': 'Username and password are required.' });
     console.log(req.body);
     
@@ -29,20 +31,15 @@ const handleLogin = async (req, res) => {
     if (match) {
         const roles = Object.values(foundUser.roles);
         // create JWTs
-        // const accessToken = jwt.sign(
-        //     {
-        //         "userInfo": {
-        //             "username": foundUser.username,
-        //             "roles": roles
-        //         }
-        //     },
-        //     process.env.ACCESS_TOKEN_SECRET,
-        //     { expiresIn: '90s' }
-        // );
         const accessToken = jwt.sign(
-            { "username": foundUser.username },
+            {
+                "userInfo": {
+                    "username": foundUser.username,
+                    "roles": roles
+                }
+            },
             process.env.ACCESS_TOKEN_SECRET,
-            { expiresIn: '190s' }
+            { expiresIn: '90s' }
         );
 
         const refreshToken = jwt.sign(

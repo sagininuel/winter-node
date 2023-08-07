@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login Page</title>
+<style>
+body {
+  font-family: Calibri, sans-serif;
+  background-color: #ffffff;
+}
+
+form {
+  border: 3px solid #f1f1f1;
+  width: 400px;
+  margin: 0 auto;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid green;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  padding: 25px;
+  background-color: lightblue;
+}
+</style>
+</head>
+<body>
+<h1>Login</h1>
+<form action="/auth" method="post">
+  <div class="container">
+    <label>Username:</label>
+    <input type="text" name="user" required>
+
+    <label>Password:</label>
+    <input type="password" name="pwd" required>
+
+    <button type="submit" onclick = "submitData()">Login</button>
+    <a href="#">Forgot password?</a>
+  </div>
+</form>
+<script>
+    const axios = require('axios');
+    function submitData() {
+      // Get the form data
+      var name = document.getElementById("user").value;
+      console.log("Here!");
+      var password = document.getElementById("passsword").value;
+    
+      // Submit the form data to the server using Axios
+      // Add a user
+    axios.post('/auth', {
+        user: name,
+        passswosrd: passwords
+    })
+        .then(function (response) {
+            console.log(response.data);
+            response.redirect("/welcome_page");
+            // Save the access token in localStorage
+            sessionStorage.setItem("accessToken", accessToken)
+            // Handle the successful response
+            if (response.status === 200) {
+            // The login was successful
+            response.redirect("/welcome_page");
+            } else {
+            // The login was unsuccessful
+            alert("Invalid username or password");
+            }
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+    }
+    // document.getElementById("Login").onclick = Login;
+    </script>
+</body>
+</html>
+
+
+

@@ -73,3 +73,9 @@
 20220116	00:50:56	d74b4e46-f3ed-4d7f-9cb1-bd67fbc18c09	ReferenceError; autHeader is not defined
 20220116	00:51:59	5a05bb5c-49da-4e15-afd1-c2c89c6c47a3	ReferenceError; token is not defined
 20220116	02:34:26	8f96c73d-282c-4646-b144-3b814ec6432a	TypeError; allowedOrigins.omcludes is not a function
+20230804	11:35:17	d8036d09-efc1-4e62-88a9-5bae323217ba	Error; Can't set headers after they are sent.
+20230804	12:56:15	9f5632b2-92c2-481a-84f7-04bfebba5714	Error; Can't set headers after they are sent.
+20230804	12:56:49	6547f437-72a0-4e60-89de-7e00dcce66cc	Error; Can't set headers after they are sent.
+20230804	13:09:45	c7661215-29f3-4293-8b7c-68305a6a592c	Error; Can't set headers after they are sent.
+20230804	13:35:46	a893d2f3-f3cf-4ba2-9708-4f34172a92a9	Error; Can't set headers after they are sent.
+20230804	13:35:55	8927ed42-0327-461a-9651-f6d762af0e40	Error; Can't set headers after they are sent.

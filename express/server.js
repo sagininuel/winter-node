@@ -33,8 +33,10 @@ app.use(cookieParser());
 // serve static files
 app.use('/', express.static(path.join(__dirname, '/public')));
 
+
 // handle incoming routes
 app.use('/', require('./routes/root'));
+//app.use('/', require('./routes/home'));
 app.use('/register', require('./routes/register'));
 app.use('/auth', require('./routes/auth'));
 app.use('/refresh', require('./routes/refresh'));
@@ -59,4 +61,4 @@ app.all('*', (req,res) => {
 
 app.use(errorHandler);
 
-app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Remantek Server is running on port ${PORT}`));

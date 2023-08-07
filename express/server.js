@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const cors = require('cors');
-const { corsOptions } = require('./config/corsOptions');
+const corsOptions = require('./config/corsOptions');
 const { logger } = require('./middleware/logEvents');
 const { errorHandler } = require('./middleware/errorHandler');
 const verifyJWT = require('./middleware/verifyJWT');
@@ -22,7 +22,7 @@ app.use(cors(corsOptions));
 
 // Built-in middleware to handle urlencoded data form data: 
 // 'content-type: application/x-www-form-urlencoded'
-app.use(express.urlencoded({ extended: false}));
+app.use(express.urlencoded({ extended: false }));
 
 // built-in middleware for json
 app.use(express.json());
@@ -47,16 +47,16 @@ app.use('/employees', require('./routes/api/employees'));
 
 // all other route paths ---> app.all accepsts regex! app.use doesn't (does in newer versions)
 // custom not found
-app.all('*', (req,res) => {
+app.all('*', (req, res) => {
     res.status(404);
     if (req.acceptsCharsets('html')) {
         res.sendFile(path.join(__dirname, 'views', '404.html'));
-    } else if (req.accepts('json')){
+    } else if (req.accepts('json')) {
         res.json({ eror: "404 Not Found" })
     } else {
         res.type('txt'.send("404 Not Found"));
     }
-    
+
 })
 
 app.use(errorHandler);

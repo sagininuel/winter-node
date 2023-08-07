@@ -1482,3 +1482,16 @@
 20230807	13:54:53	4f37e821-d267-4f43-a587-615230b9114b	POST	undefined	/employees
 20230807	13:55:01	a4001d4d-22eb-405a-bba9-afa9e9998ae6	GET	undefined	/refresh
 20230807	13:55:26	fdafa5a4-de15-4e3a-b732-484e7264539e	POST	undefined	/employees
+20230807	23:23:57	a795d7d8-97c1-4d51-a2ff-31354b6b8886	OPTIONS	http://localhost:3000	/register
+20230807	23:25:15	8bf6edef-25dd-4527-ac85-c5ea05a1e140	OPTIONS	http://localhost:3000	/register
+20230807	23:25:15	8cbaa836-9a33-4621-b12b-eedc3cde7ea4	POST	http://localhost:3000	/register
+20230807	23:25:49	41ae4232-f097-4e18-b663-56fe5666d577	OPTIONS	http://localhost:3000	/register
+20230807	23:25:49	b041f1c1-afd9-41a3-bc5e-3db7aa7626b0	POST	http://localhost:3000	/register
+20230807	23:27:37	1fef885d-d06e-4b22-b435-d0eebbb3c50e	OPTIONS	http://localhost:3000	/register
+20230807	23:27:37	b1b6fed0-98e8-44e4-a60d-c2067ae55cde	POST	http://localhost:3000	/register
+20230807	23:29:17	4ede0ca4-1c1c-4219-8ec9-f88b07c796ef	OPTIONS	http://localhost:3000	/register
+20230807	23:29:17	33d1a2a7-9a2b-4052-8863-1493c4834651	POST	http://localhost:3000	/register
+20230807	23:33:54	bcbc6633-c315-4116-ba9b-68fac482510a	OPTIONS	http://localhost:3000	/register
+20230807	23:33:54	d27e304b-a0bd-428b-bc9e-f5c479003f9a	POST	http://localhost:3000	/register
+20230807	23:35:25	bb78fa0d-468f-4c1e-9953-2efef1f7d3ad	OPTIONS	http://localhost:3000	/register
+20230807	23:35:25	645c0bfe-6bbb-46f8-96d9-e94722cff655	POST	http://localhost:3000	/register

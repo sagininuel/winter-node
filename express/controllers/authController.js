@@ -16,7 +16,8 @@ const handleLogin = async (req, res) => {
     
 
     if (!pwd || !user) return res.status(400).json({ 'message': 'Username and password are required.' });
-    console.log(req.body);
+    console.log("\nIncoming Authentication Request -->",req.body);
+    console.log("\n")
     
     // if (!pwd) return res.status(400).json({ 'message': 'password are required.' });
     // if (!user) return res.status(400).json({ 'message': 'Username are required.' });

@@ -1,3 +1,8 @@
 node_modules
 test.js
 .env
+<<<<<<< HEAD
+=======
+logs
+model
+>>>>>>> 7c38c32f87117b17f5c1835ca2ad12c3b50c2a15

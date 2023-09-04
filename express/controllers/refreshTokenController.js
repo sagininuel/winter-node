@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-//const alert1  = require('../test');
-//const alert2  = require('../test');
-=======
-//const alert1 = require('../test');
-//const alert2 = require('../test');
->>>>>>> 83d15b030ad0d15e6a3aea1139e1f5e2ecd1aa9f
-
 const usersDB = {
     users: require('../model/users.json'),
     setUsers: function (data) { this.users = data }

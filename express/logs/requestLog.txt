@@ -914,3 +914,6 @@
 20230801	14:01:06	6732d39e-8b3e-4b52-9515-8a7ff6edfc68	POST	undefined	/auth
 20230801	14:13:43	820561f1-14cc-4292-8b90-184db88857f0	POST	undefined	/register
 20230801	14:14:10	2e536715-3861-4e75-baab-0ff10f21441a	POST	undefined	/register
+20230904	10:55:04	e8b7f866-e061-490e-9cf6-d3a3c7899f40	GET	undefined	/
+20230904	10:55:04	fff63bd1-5f56-4662-b8f8-2367ebea12f0	GET	undefined	/css/style.css
+20230904	10:55:04	19a5ba5f-b223-4eb8-8267-e4968f8ffa6f	GET	undefined	/favicon.ico

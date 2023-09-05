@@ -34,9 +34,17 @@ app.use(cookieParser());
 app.use('/', express.static(path.join(__dirname, '/public')));
 
 
-// handle incoming routes
+// handle incoming routes without authorization needed
 app.use('/', require('./routes/root'));
-//app.use('/', require('./routes/home'));
+app.use('/', require('./routes/root'));
+app.use('/style.css', require('./routes/root'));
+app.use('/script.js', require('./routes/root'));
+app.use('/image.png', require('./routes/root'));
+app.use('/remantek.png', require('./routes/root'));
+app.use('/public/css/font-awesome-4.7.0/css/font-awesome.min.css', require('./routes/root'));
+
+
+// handle incoming routes with authorization needed
 app.use('/register', require('./routes/register'));
 app.use('/auth', require('./routes/auth'));
 app.use('/refresh', require('./routes/refresh'));

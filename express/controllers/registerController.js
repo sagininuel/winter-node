@@ -28,6 +28,7 @@ const handleNewUser = async (req, res) => {
         await fsPromises.writeFile(
             path.join(__dirname, '..', 'model', 'users.json'),
             JSON.stringify(usersDB.users)
+            //usersDB.users
             );
 
         console.log(usersDB.users);

@@ -12,7 +12,8 @@ const verifyJWT = (req, res, next) => {
         (err, decoded) => {
             if (err) return res.sendStatus(403); // Invalid Token Forbidden
             req.user = decoded.username;
-            req.roles = decoded.userInfo.roles;
+            //req.user = decoded.userInfo.username;
+            //req.roles = decoded.userInfo.roles;
             next();
         }
     )

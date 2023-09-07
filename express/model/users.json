@@ -1,1 +1,34 @@
-[{"username":"Inigas2","roles":{"User":1000},"password":"$2b$10$U891pYebRl/A7VNS4Lqc0.150Ew1ZtAgPSYdjGa6Sd32JndGlui26","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkluaWdhczIiLCJpYXQiOjE2NDQwNzExODgsImV4cCI6MTY0NDE1NzU4OH0.eiYQb3MlZ6Gnw9zEdfVhZ00yi-1JEtwTZdJbvAcYsKw"},{"username":"Inigas","roles":{"User":1000,"Editor":1001,"Admin":1010},"password":"$2b$10$tE6dwpTKEM9Mq8sNkhs0JecikM3vaK623AY7/TMiiQDq/h9o83Cyq","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkluaWdhcyIsImlhdCI6MTY0NDA3MTI0NywiZXhwIjoxNjQ0MTU3NjQ3fQ.MBZ1WsYxS7rScUnCQYd7FtfcFt4uGwmJhoxmHwupQJE"},{"username":"Inigas3","roles":{"User":1000},"password":"$2b$10$9ulfhjeHEEqH3Q1Hu5ry9e9JwWjsYN2uLwIJtX6zqTB8MsIlOzqc6","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkluaWdhczMiLCJpYXQiOjE2NDQwNzUwMTAsImV4cCI6MTY0NDE2MTQxMH0.HRaKkgXcwaGA2fTopCih0uZOoKHRMDPIkytiMX0kTZM"},{"username":"Inigas1","roles":{"User":1000,"Editor":1001},"password":"$2b$10$XBR/UsJmU9aD2RNx.qAryuZETJYZ3BOjynJPQfjrzsFkfxouEjSmm","refreshToken":""}]
+[
+    {
+        "username": "Inigas2",
+        "roles": {
+            "User": 1000
+        },
+        "password": "$2b$10$U891pYebRl/A7VNS4Lqc0.150Ew1ZtAgPSYdjGa6Sd32JndGlui26",
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkluaWdhczIiLCJpYXQiOjE2NDQwNzExODgsImV4cCI6MTY0NDE1NzU4OH0.eiYQb3MlZ6Gnw9zEdfVhZ00yi-1JEtwTZdJbvAcYsKw"
+    },
+    {
+        "username": "Inigas3",
+        "roles": {
+            "User": 1000
+        },
+        "password": "$2b$10$9ulfhjeHEEqH3Q1Hu5ry9e9JwWjsYN2uLwIJtX6zqTB8MsIlOzqc6",
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkluaWdhczMiLCJpYXQiOjE2NDQwNzUwMTAsImV4cCI6MTY0NDE2MTQxMH0.HRaKkgXcwaGA2fTopCih0uZOoKHRMDPIkytiMX0kTZM"
+    },
+    {
+        "username": "Inigas1",
+        "roles": {
+            "User": 1000,
+            "Editor": 1001
+        },
+        "password": "$2b$10$XBR/UsJmU9aD2RNx.qAryuZETJYZ3BOjynJPQfjrzsFkfxouEjSmm",
+        "refreshToken": ""
+    },
+    {
+        "username": "Inigas",
+        "roles": {
+            "User": 1000
+        },
+        "password": "$2b$10$0jbaMV/vzJzmvfSio6ZmQeKowmm7cznuBn82DvfDUn9fI/8n5q/nO"
+    }
+]

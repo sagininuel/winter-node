@@ -3,3 +3,6 @@ test.js
 .env
 logs
 model
+favicon.ico
+public
+_index.html

@@ -1,1 +1,61 @@
-[{"username":"Inigas2","roles":{"User":1000},"password":"$2b$10$U891pYebRl/A7VNS4Lqc0.150Ew1ZtAgPSYdjGa6Sd32JndGlui26","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkluaWdhczIiLCJpYXQiOjE2NDQwNzExODgsImV4cCI6MTY0NDE1NzU4OH0.eiYQb3MlZ6Gnw9zEdfVhZ00yi-1JEtwTZdJbvAcYsKw"},{"username":"Inigas3","roles":{"User":1000},"password":"$2b$10$9ulfhjeHEEqH3Q1Hu5ry9e9JwWjsYN2uLwIJtX6zqTB8MsIlOzqc6","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkluaWdhczMiLCJpYXQiOjE2NDQwNzUwMTAsImV4cCI6MTY0NDE2MTQxMH0.HRaKkgXcwaGA2fTopCih0uZOoKHRMDPIkytiMX0kTZM"},{"username":"Inigas1","roles":{"User":1000,"Editor":1001},"password":"$2b$10$XBR/UsJmU9aD2RNx.qAryuZETJYZ3BOjynJPQfjrzsFkfxouEjSmm","refreshToken":""},{"username":"Inigas","roles":{"User":1000},"password":"$2b$10$0jbaMV/vzJzmvfSio6ZmQeKowmm7cznuBn82DvfDUn9fI/8n5q/nO","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkluaWdhcyIsImlhdCI6MTY5Mzk3OTU4OCwiZXhwIjoxNjk0MDY1OTg4fQ.8SQEYiOSrIg8vKJ9-ARY6AbFT_6jd5bfiEvJXgB_Ykc"},{"username":"test","roles":{"User":1000},"password":"$2b$10$G5Mee7S33MyQ6qUF1MiJzujlh7ygspAQE4qwSsPGnPkigLqS0tuFi","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QiLCJpYXQiOjE2OTcwOTMxMDYsImV4cCI6MTY5NzE3OTUwNn0.2gEZFt0km_XM3-Jmm69n_uKPSxZnSwz9GJj9Fl4u968"},{"username":"Sagini","roles":{"User":1000},"password":"$2b$10$xKZs2HWL3yVwT8zeIMI5QOt7xRJszjQAMRVLH9cYfehJ.TiNwM99e","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhZ2luaSIsImlhdCI6MTY5NzA5MzQ2NSwiZXhwIjoxNjk3MTc5ODY1fQ.v5fRjt4VPkL9fgpF3qd7bO9yGjw8OYZ_tvypAWC5rAQ"}]
+[
+  {
+    "username": "Inigas2",
+    "roles": { "User": 1000 },
+    "password": "$2b$10$U891pYebRl/A7VNS4Lqc0.150Ew1ZtAgPSYdjGa6Sd32JndGlui26",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkluaWdhczIiLCJpYXQiOjE2NDQwNzExODgsImV4cCI6MTY0NDE1NzU4OH0.eiYQb3MlZ6Gnw9zEdfVhZ00yi-1JEtwTZdJbvAcYsKw"
+  },
+  {
+    "username": "Inigas3",
+    "roles": { "User": 1000 },
+    "password": "$2b$10$9ulfhjeHEEqH3Q1Hu5ry9e9JwWjsYN2uLwIJtX6zqTB8MsIlOzqc6",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkluaWdhczMiLCJpYXQiOjE2NDQwNzUwMTAsImV4cCI6MTY0NDE2MTQxMH0.HRaKkgXcwaGA2fTopCih0uZOoKHRMDPIkytiMX0kTZM"
+  },
+  {
+    "username": "Inigas1",
+    "roles": { "User": 1000, "Editor": 1001 },
+    "password": "$2b$10$XBR/UsJmU9aD2RNx.qAryuZETJYZ3BOjynJPQfjrzsFkfxouEjSmm",
+    "refreshToken": ""
+  },
+  {
+    "username": "Inigas",
+    "roles": { "User": 1000 },
+    "password": "$2b$10$0jbaMV/vzJzmvfSio6ZmQeKowmm7cznuBn82DvfDUn9fI/8n5q/nO",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkluaWdhcyIsImlhdCI6MTY5Mzk3OTU4OCwiZXhwIjoxNjk0MDY1OTg4fQ.8SQEYiOSrIg8vKJ9-ARY6AbFT_6jd5bfiEvJXgB_Ykc"
+  },
+  {
+    "username": "test",
+    "roles": { "User": 1000 },
+    "password": "$2b$10$G5Mee7S33MyQ6qUF1MiJzujlh7ygspAQE4qwSsPGnPkigLqS0tuFi",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QiLCJpYXQiOjE2OTcwOTMxMDYsImV4cCI6MTY5NzE3OTUwNn0.2gEZFt0km_XM3-Jmm69n_uKPSxZnSwz9GJj9Fl4u968"
+  },
+  {
+    "username": "Dans",
+    "roles": { "User": 1000 },
+    "password": "$2b$10$C3NcGfMlW0Ek/odUDadEBObuDwVQFrqu.EGUNfLYtN5NgD/vFUx46"
+  },
+  {
+    "username": "garosu",
+    "roles": { "User": 1000 },
+    "password": "$2b$10$/l6RWUvJGWOVGAbx1VeQbuwigYvxISpuv44qIPmvrcIpVtzu/Rqpa",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imdhcm9zdSIsImlhdCI6MTY5NzEwMDc1MywiZXhwIjoxNjk3MTg3MTUzfQ.fx6fw0JPhko-xyXxO2QxBJKXiQJS7uW_9QRJPD-3zAM"
+  },
+  {
+    "username": "Name",
+    "roles": { "User": 1000 },
+    "password": "$2b$10$JaK/MH1xm7dcXs.GT0O2/.kxyEYI70GqZUaW0HeWo45ovpstM/Di6",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik5hbWUiLCJpYXQiOjE2OTcxNjMwMjcsImV4cCI6MTY5NzI0OTQyN30.61PfjzKB5hz7xkV3v6rEd4xpB7og19LHhrXD30dxp4E"
+  },
+  {
+    "username": "Game",
+    "roles": { "User": 1000 },
+    "password": "$2b$10$mKd0OyQqCFisDOautmvXxOfqOz3ytBTJlipUM7e/YA7adsRs2MiCy",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkdhbWUiLCJpYXQiOjE2OTcxNjQyMTUsImV4cCI6MTY5NzI1MDYxNX0.uEhY9Z9W5Uxk8EbGJNkQns0QsOy46fa0d7fHkFu3dII"
+  },
+  {
+    "username": "Sagini",
+    "roles": { "User": 1000 },
+    "password": "$2b$10$xKZs2HWL3yVwT8zeIMI5QOt7xRJszjQAMRVLH9cYfehJ.TiNwM99e",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhZ2luaSIsImlhdCI6MTY5NzE4NzI4MiwiZXhwIjoxNjk3MjczNjgyfQ.LXFaiernTCUP80j9Pz-ZvM8dNtlfrNC4jLqD25TmgHc"
+  }
+]

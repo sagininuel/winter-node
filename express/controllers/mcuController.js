@@ -4,7 +4,7 @@ const readline = require('readline')
 
 let global = 0;
 const relayActuator = async (req, res) => {
-    const code = req.body;
+    //const code = req.body;
     //console.log(code);
   
     const client = new net.Socket()
@@ -47,6 +47,7 @@ const ledActuator = async (req, res) => {
             client.destroy();
         })
         client.write(`Remantek07@L`);
+        res.status(201).json({'message': 'Led Set' });
         client.on("data", (data) => {
             console.log(`${data.toString("utf-8")}\n`);
             if(data.toString("utf-8")[0] === "L"){
@@ -56,8 +57,6 @@ const ledActuator = async (req, res) => {
                 // return 1;
             }
         })
-        
-        
     }    
 }
 
@@ -66,18 +65,17 @@ const led2Actuator = async (req, res) =>{
         console.log("Led ON!")
         // res.status(201).json({'message': 'Led ON!' });
     }
-    
 }
 
-
-
 const handleCommand = async (req, res) => {
-    const { command } = req.body;
+    const { id: command } = req.body;
     
 
-    if (!command) return res.status(400).json({ 'message': 'Username and password are required.' });
+    if (command[0] != 'R') return res.status(400).json({ 'message': 'Remantek Protocol Fails' });
     console.log(req.body);
-    res.status(200).json({"message": "Command Success!"});
+    // res.status(200).json({"message": "Command Success!"});
+
+    
 
     const client = new net.Socket()
     if(client){
@@ -89,13 +87,19 @@ const handleCommand = async (req, res) => {
             client.destroy();
         })
         client.on("data", (data) => {
-        console.log(`${data.toString("utf-8")}\n`)
+            console.log(`${data.toString("utf-8")}\n`)
+            if(data.toString("utf-8")[1] === "U"){
+                // res.status(201).json({'message': data.toString('utf-8') });
+                res.status(201).json('ON');
+            }
+            if(data.toString("utf-8")[1] === "u"){
+                // res.status(201).json({'message': data.toString('utf-8') });
+                res.status(201).json('OFF');
+            }    
         })
-        
         client.write(command);
         // res.status(201).json({'message': 'Relay Set' });
     }
-
 }
 
 

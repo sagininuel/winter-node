@@ -2,11 +2,12 @@ const express = require('express');
 const router = express.Router();
 const path = require('path');
 
+
 router.get('^/$|/index(.html)?', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'views', '_index.html'));
 });
-router.get('^/$|/welcome_page(.html)?', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'views', 'welcome_page.html'));
+router.get('^/$|/activity(.html)?', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'views', 'activity.html'));
 });
 
 router.get('^/$|/style(.css)?', (req, res) => {
@@ -29,6 +30,8 @@ router.get('^/$|/remantek(.png)?', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'public','img','remantek.png'));
 });
 
-
+router.get('^/$|/favicon(.ico)?', (req, res) => {
+    res.sendFile(path.join(__dirname, '..','favicon.ico'));
+});
 
 module.exports = router;

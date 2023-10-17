@@ -5,10 +5,12 @@ const cors = require('cors');
 const corsOptions = require('./config/corsOptions');
 const { logger } = require('./middleware/logEvents');
 const { errorHandler } = require('./middleware/errorHandler');
+const { mcuActuator } = require('./controllers/mcuController');
 const verifyJWT = require('./middleware/verifyJWT');
 const cookieParser = require('cookie-parser');
 const credentials = require('./middleware/credentials.js');
-const PORT = process.env.PORT || 3500;
+
+const PORT = process.env.PORT || 7700;
 
 // custom middleware logger
 app.use(logger);
@@ -35,13 +37,16 @@ app.use('/', express.static(path.join(__dirname, '/public')));
 
 
 // handle incoming routes without authorization needed
+//app.use('/favicon.ico', require('./routes/root'));
 app.use('/', require('./routes/root'));
-app.use('/', require('./routes/root'));
+// app.use('/', require('./routes/root'));
+app.use('/mcu', require('./routes/mcu'));
+
 app.use('/style.css', require('./routes/root'));
 app.use('/script.js', require('./routes/root'));
 app.use('/image.png', require('./routes/root'));
 app.use('/remantek.png', require('./routes/root'));
-app.use('/public/css/font-awesome-4.7.0/css/font-awesome.min.css', require('./routes/root'));
+//app.use('/public/css/font-awesome-4.7.0/css/font-awesome.min.css', require('./routes/root'));
 
 
 // handle incoming routes with authorization needed

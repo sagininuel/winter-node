@@ -10,7 +10,7 @@ const verifyJWT = require('./middleware/verifyJWT');
 const cookieParser = require('cookie-parser');
 const credentials = require('./middleware/credentials.js');
 
-const PORT = process.env.PORT || 7700;
+const PORT = process.env.PORT || 7770;
 
 // custom middleware logger
 app.use(logger);

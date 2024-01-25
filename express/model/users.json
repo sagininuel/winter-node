@@ -54,8 +54,8 @@
   },
   {
     "username": "Sagini",
-    "roles": { "User": 1000 },
-    "password": "$2b$10$xKZs2HWL3yVwT8zeIMI5QOt7xRJszjQAMRVLH9cYfehJ.TiNwM99e",
-    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhZ2luaSIsImlhdCI6MTY5NzE4NzI4MiwiZXhwIjoxNjk3MjczNjgyfQ.LXFaiernTCUP80j9Pz-ZvM8dNtlfrNC4jLqD25TmgHc"
+    "roles": { "User": 1000, "Editor": 1001, "Admin": 1010 },
+    "password": "$2b$10$0f8GJKUGtcJRIPKD6.xS2.rbSqeIJL7PUs8kDMGHJpdJXByzcSABq",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhZ2luaSIsImlhdCI6MTY5ODYzMzQ3MywiZXhwIjoxNjk4NzE5ODczfQ.Fny7NhpY6Xze0EFThZhc_RRdfFsKo1V17XoU8S3vkLk"
   }
 ]
